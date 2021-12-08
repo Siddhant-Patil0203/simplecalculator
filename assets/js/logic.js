@@ -21,6 +21,8 @@ function result(){
 
 /*theme*/
 function darktheme(){
+    document.getElementById("body").style.background = '#161623';
+
     document.getElementById("night").style.color = '#fff';
     document.getElementById("day").style.color = 'rgb(120, 120, 120)';
 
@@ -70,6 +72,7 @@ function darktheme(){
 }
 
 function lighttheme(){
+    document.getElementById("body").style.background = 'linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4)';
     document.getElementById("day").style.color = '#000';
     document.getElementById("night").style.color = 'rgb(190, 190, 190)';
 
