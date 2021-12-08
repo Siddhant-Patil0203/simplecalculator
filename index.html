@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="icon" type="image/x-icon" href="">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/logic.js"></script>
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Monda"> 
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Calculator</h1>
+    </header>
+    <main>
+        <div class="container" id="container">
+                <div class="theme" id="theme">
+                <button class="themeb" name="day" value="day" onclick="lighttheme();"><i class="fa fa-sun-o" id="day" aria-hidden="true" style="margin: 10px 15px 10px 15px;"></i></button>
+                <button class="themeb" name="night" value="night" onclick="darktheme();"><i class="fa fa-moon-o" id="night" aria-hidden="true" style="margin: 10px 15px 10px 10px;"></i></button>
+                </div>
+                <div class="a"><input type="text" class="display" id="show" value="0" name="display" readonly></div>
+                <div class="inputarea" id="inputarea">
+                    <div class="b"><button onclick="clean();" class="button" id="et" name="AC" value="AC" style="color:rgb(43, 219, 160);">AC</button></div>
+                    <div class="b"><button onclick="backs();" class="button" id="et1" name="back" value="back" style="color:rgb(43, 219, 160);"><i class="fa fa-arrow-left" aria-hidden="true"></i></button></div>
+                    <div class="b"><button onclick="adddisp('%');" class="button" id="et2" name="%" value="%" style="color:rgb(43, 219, 160);">%</button></div>
+                    <div class="b"><button onclick="adddisp('/');" class="button" id="et3" name="/" value="/" style="font-size: 1.5em; color: rgb(236, 31, 72);">/</button></div>
+                    <div class="b"><button onclick="adddisp('7');" class="button" id="ib" name="7" value="7">7</button></div>
+                    <div class="b"><button onclick="adddisp('8');" class="button" id="ib1" name="8" value="8">8</button></div>
+                    <div class="b"><button onclick="adddisp('9');" class="button" id="ib2" name="9" value="9">9</button></div>
+                    <div class="b"><button onclick="adddisp('*');" class="button" id="et4" name="X" value="X" style="font-size: 1.2em; font-weight:1; color: rgb(236, 31, 72);"><i class="fa fa-close" aria-hidden="true"></i></button></div>
+                    <div class="b"><button onclick="adddisp('4');" class="button" id="ib3" name="4" value="4">4</button></div>
+                    <div class="b"><button onclick="adddisp('5');" class="button" id="ib4" name="5" value="5">5</button></div>
+                    <div class="b"><button onclick="adddisp('6');" class="button" id="ib5" name="6" value="6">6</button></div>
+                    <div class="b"><button onclick="adddisp('-');" class="button" id="et5" name="-" value="-" style="color: rgb(236, 31, 72);"><i class="fa fa-minus" aria-hidden="true"></i></button></div>
+                    <div class="b"><button onclick="adddisp('1');" class="button" id="ib6" name="1" value="1" >1</button></div>
+                    <div class="b"><button onclick="adddisp('2');" class="button" id="ib7" name="2" value="3">2</button></div>
+                    <div class="b"><button onclick="adddisp('3');" class="button" id="ib8" name="3" value="3">3</button></div>
+                    <div class="b"><button onclick="adddisp('+');" class="button" id="et6" name="+" value="+" style="color: rgb(236, 31, 72);"><i class="fa fa-plus" aria-hidden="true"></i></button></div>
+                    <div class="b"><button onclick="clean();" class="button" id="ib9" name="undo" value="undo"><i class="fa fa-undo" aria-hidden="true"></i></button></div>
+                    <div class="b"><button onclick="adddisp('0');" class="button" id="ib10" name="0" value="0">0</button></div>
+                    <div class="b"><button onclick="adddisp('.');" class="button" id="ib11" name="." value=".">.</button></div>
+                    <div class="b"><button onclick="result();" class="button" id="et7" name="=" value="=" style="font-size: 2em; color: rgb(48, 187, 187);">=</button></div>
+                </div>
+        </div>
+    </main>
+    <footer id="f">
+        <div class="footer_bottom">
+            <div class="footer_content">
+                <h4>Simple Calculator</h4>
+                <ul class="social"> 
+                <li><a href="https://github.com/Siddhant-Patil0203" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/siddhant-patil-934113205/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.instagram.com/sidd.0203/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.facebook.com/siddhant.patil.792303/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <p>copyrights &copy;2021 Siddhant Patil</p>
+        </div>
+    </footer>
+</body>
+</html>
